@@ -9,7 +9,7 @@ const app = express();
 dotenv.config();
 app.use(express.json())
 app.use(cors({
-    origin : [`${process.env.REACT_URL}`,],
+    origin : ["https://blogger-weld-seven.vercel.app",],
     methods : ['POST','GET','PUT'],
     credentials : true,
 }))
