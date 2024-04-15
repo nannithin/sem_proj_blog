@@ -6,7 +6,7 @@ const CheckAuth = () => {
 
     const islogin = async()=> {
         try {
-            const resp = await axios.get("https://sem-proj-blog.vercel.app/api/auth/islogin",{
+            const resp = await axios.get("http://localhost:3000/api/auth/islogin",{
                 withCredentials : true
             });
             return resp.data;
