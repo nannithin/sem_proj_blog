@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use('/api',allRoutes)
 
 const mongooseConnection = () => {
-    mongoose.connect(process.env.MONGO_URI)
+    mongoose.connect(`${process.env.MONGO_URI}`)
     .then(()=>{
         console.log("database conected")
     })
