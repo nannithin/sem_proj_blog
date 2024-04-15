@@ -10,7 +10,7 @@ const Home = () => {
     const [searchterm,setSearchTerm] = useState("")
     useEffect(() => {
         if (!blogs) {
-            axios.get("http://localhost:3000/api/auth/getblogs")
+            axios.get("https://sem-proj-blog.vercel.app/api/auth/getblogs")
                 .then(({ data }) => {
                     setBlogs(data);
                 })
