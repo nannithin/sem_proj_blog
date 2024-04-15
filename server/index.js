@@ -8,11 +8,7 @@ import dotenv from 'dotenv';
 const app = express();
 dotenv.config();
 app.use(express.json())
-app.use(cors({
-    origin : ["https://blogger-weld-seven.vercel.app",],
-    methods : ['POST','GET','PUT'],
-    credentials : true,
-}))
+app.use(cors());
 app.use(cookieParser());
 
 
