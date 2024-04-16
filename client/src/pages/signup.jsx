@@ -20,7 +20,7 @@ const Signup = () => {
 
     const submithandler = (e) => {
         e.preventDefault();
-        axios.post('https://blogger-roan.vercel.app/api/auth/signup',{name,email,password},{withCredentials : true})
+        axios.post('https://sem-proj-blog.vercel.app/api/auth/signup',{name,email,password},{withCredentials : true})
         .then(({ data }) => {
             if (data.status == 'sucess') {
                 localStorage.setItem('user', JSON.stringify(data))
