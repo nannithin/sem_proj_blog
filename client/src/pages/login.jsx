@@ -24,7 +24,7 @@ const Login = () => {
     const submithandler = (e) => {
         e.preventDefault();
         loadingToast = toast.loading("Loading")
-        axios.post("https://blogger-roan.vercel.app/api/auth/login", { email, password }, { withCredentials: true })
+        axios.post("https://sem-proj-blog.vercel.app/api/auth/login", { email, password }, { withCredentials: true })
             .then(({ data }) => {
                 toast.dismiss(loadingToast)
                 if (data.status == 'sucess') {
