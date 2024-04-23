@@ -70,7 +70,7 @@ const Create = () => {
     
     const publishhandler = (e) => {
         e.preventDefault();
-        axios.post("https://blogger-roan.vercel.app/api/auth/createblog",{title,shortdes,longdes,banner : imageFileUrl},{ withCredentials: true })
+        axios.post("https://sem-proj-blog.onrender.com/api/auth/createblog",{title,shortdes,longdes,banner : imageFileUrl},{ withCredentials: true })
         .then(({data}) => {
             if(data == 'published'){
                 navigate("/")
