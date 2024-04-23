@@ -10,7 +10,7 @@ const Blog = () => {
     const {id} = useParams();
     const [blog,setBlog] = useState(null)
     useEffect(()=>{
-        axios.post("https://sem-proj-blog.vercel.app/api/auth/getblog",{id})
+        axios.post("https://sem-proj-blog.onrender.com/api/auth/getblog",{id})
         .then(({data : blog}) => {
             setBlog(blog)
         })
