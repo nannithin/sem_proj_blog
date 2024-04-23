@@ -14,7 +14,7 @@ const Profile = () => {
     const [email,setEmail] = useState("")
 
     const updatehandler = () => {
-        axios.post("https://blogger-roan.vercel.app/api/auth/updateuser",{name,email},{withCredentials : true})
+        axios.post("https://sem-proj-blog.onrender.com/api/auth/updateuser",{name,email},{withCredentials : true})
         .then(({data}) => {
             if(data == 'updated'){
                 setUserAuth({name,email,status : 'success'})
