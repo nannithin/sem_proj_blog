@@ -13,7 +13,7 @@ const Home = () => {
             axios.get("https://sem-proj-blog.onrender.com/api/auth/getblogs")
                 .then(({ data }) => {
                     setBlogs(data);
-                })
+                }).catch((err) => console.log(err))
         }
     }, [])
     console.log(blogs)
