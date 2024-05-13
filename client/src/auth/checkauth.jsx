@@ -9,6 +9,7 @@ const CheckAuth = () => {
             const resp = await axios.get("https://sem-proj-blog.onrender.com/api/auth/islogin",{
                 withCredentials : true
             });
+            console.log(resp);
             return resp.data;
         } catch (error) {
             console.log(error)
